@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Takedown Resource Kit - Take Back Control">
+    <meta property="og:description" content="A step-by-step guide to reporting and removing non-consensual images from the internet. Free, anonymous, and secure.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="favicon.png">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <title>India Resources - Takedown Resource Kit</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <button id="quick-exit" onclick="quickExit()">Quick Exit →</button>
+
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">TRK</a>
+                <ul>
+                    <li><a href="takedown.html">Takedown Guides</a></li>
+                    <li><a href="india.html">India Resources</a></li>
+                    <li><a href="international.html">International Help</a></li>
+                    <li><a href="mental-health.html">Mental Health</a></li>
+                    <li><a href="legal-rights.html">Legal Rights</a></li>
+                    <li><a href="digital-security.html">Digital Security</a></li>
+                    <li><a href="tracker.html">Progress Tracker</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h2>Reporting and Support in India</h2>
+                <p>Find official government portals and state-wise police contact information.</p>
+            </div>
+        </section>
+
+        <section class="resource-section">
+            <div class="container">
+                <div class="resource-category">
+                    <h3>National Level Helplines</h3>
+                    <div class="resource-grid">
+                        <div class="resource-card">
+                            <h4>National Cyber Crime Portal</h4>
+                            <p>The official government portal to report all types of cybercrime. You can file a complaint anonymously.</p>
+                            <a href="https://www.cybercrime.gov.in/" target="_blank" rel="noopener noreferrer" class="button primary">File a Complaint</a>
+                        </div>
+                        <div class="resource-card">
+                            <h4>Women's Helpline</h4>
+                            <p>For immediate assistance, dial the pan-India number for the Women's Helpline.</p>
+                            <p class="contact-info">Dial: 1091</p>
+                        </div>
+                        <div class="resource-card">
+                            <h4>Emergency Response</h4>
+                            <p>For any emergency situation that requires immediate police assistance.</p>
+                            <p class="contact-info">Dial: 112</p>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="section-divider">
+
+                <div class="resource-category">
+                    <h3>State-Wise Cyber Crime Police</h3>
+                    <p>Find the contact details for your state's Cyber Crime unit. Start typing your state's name to filter the list.</p>
+                    <input type="text" id="state-search" onkeyup="filterStates()" placeholder="Search for your state...">
+                    
+                    <div id="state-list" class="resource-grid">
+                        <div class="resource-card state-card"><h4>Delhi</h4><p>Website: <a href="http://cybercrime.delhipolice.gov.in/" target="_blank">cybercrime.delhipolice.gov.in</a></p><p class="contact-info">Helpline: 1930</p></div>
+                        <div class="resource-card state-card"><h4>Haryana</h4><p>Website: <a href="https://haryanapolice.gov.in/TelephoneDirectory_cyber" target="_blank">cybercrime.haryana.gov.in</a></p><p class="contact-info">Helpline: 1930</p></div>
+                        <div class="resource-card state-card"><h4>Himachal Pradesh</h4><p>Email: <a href="mailto:cybercrcell-hp@nic.in">cybercrcell-hp@nic.in</a></p><p class="contact-info">Helpline: 1930</p></div>
+                        <div class="resource-card state-card"><h4>Jammu & Kashmir</h4><p>Email: <a href="mailto:cybercrcell-hp@nic.in">igcrime-jk@nic.in</a></p><p class="contact-info">Helpline: 1930</p></div>
+                        <div class="resource-card state-card"><h4>Punjab</h4><p>Website: <a href="https://cybercrime.punjabpolice.gov.in/" target="_blank">cybercrime.punjabpolice.gov.in</a></p><p class="contact-info">Helpline: 1930</p></div>
+                        <div class="resource-card state-card"><h4>Rajasthan</h4><p>Email: <a href="mailto:ccps-raj@nic.in">ccps.raj@nic.in</a></p><p class="contact-info">Helpline: 1930</p></div>
+                        <div class="resource-card state-card"><h4>Uttar Pradesh</h4><p>Website: <a href="https://uppolice.gov.in/article/en/cyber-crime" target="_blank">uppolice.gov.in</a></p><p class="contact-info">Helpline: 1930</p></div>
+                        <div class="resource-card state-card"><h4>Uttarakhand</h4><p>Website: <a href="https://policecitizenportal.uk.gov.in/Citizen/AboutLoudSpeaker.aspx" target="_blank">policecitizenportal.uk.gov.in</a></p><p class="contact-info">Helpline: 1930</p></div>
+                        <div class="resource-card state-card"><h4>Andhra Pradesh</h4><p>Email: <a href="mailto:cybercrimes-cid@ap.gov.in">cybercrimes-cid@ap.gov.in</a></p><p class="contact-info">Helpline: 1930</p></div>
+                        <div class="resource-card state-card"><h4>Karnataka</h4><p>Email: <a href="mailto:cybercrimenodal@ksp.gov.in">cybercrimenodal@ksp.gov.in</a></p><p class="contact-info">Helpline: 1930</p></div>
+                        <div class="resource-card state-card"><h4>Kerala</h4><p>Website: <a href="https://cyberdome.kerala.gov.in/" target="_blank">cyberdome.kerala.gov.in</a></p><p>Email: <a href="mailto:cyberdome.pol@kerala.gov.in">cyberdome.pol@kerala.gov.in</a></p><p class="contact-info">Helpline: 1930</p></div>
+                        <div class="resource-card state-card"><h4>Tamil Nadu</h4><p>Email: <a href="mailto:sp2cwc@gmail.com">sp2cwc@gmail.com</a></p><p class="contact-info">Helpline: 1930</p></div>
+                        <div class="resource-card state-card"><h4>Telangana</h4><p>Website: <a href="https://tgcsb.tspolice.gov.in/" target="_blank">Telangana Cyber Security Bureau</a></p><p class="contact-info">Helpline: 1930</p></div>
+                        <div class="resource-card state-card"><h4>Arunachal Pradesh</h4><p>Email: <a href="mailto:cybercrimes1930@cid.appolice.gov.in">cybercrimes1930@cid.appolice.gov.in</a></p><p class="contact-info">Helpline: 1930</p></div>
+                        <div class="resource-card state-card"><h4>Assam</h4><p>Email: <a href="mailto:digp-cid@assampolice.gov.in">digp-cid@assampolice.gov.in</a></p><p class="contact-info">Helpline: 1930</p></div>
+                        <div class="resource-card state-card"><h4>Bihar</h4><p>Email: <a href="mailto:cybercell-bih@nic.in">cybercell-bih@nic.in</a></p><p class="contact-info">Helpline: 1930</p></div>
+                        <div class="resource-card state-card"><h4>Chhattisgarh</h4><p>Email: <a href="mailto:aigtech-phq.cg@gov.in">aigtech-phq.cg@gov.in</a></p><p class="contact-info">Helpline: 1930</p></div>
+                        <div class="resource-card state-card"><h4>Jharkhand</h4><p>Website: <a href="https://www.jhpolice.gov.in/cyber-crime-ps" target="_blank">jhpolice.gov.in/cyber-crime-ps</a></p><p class="contact-info">Helpline: 1930</p></div>
+                        <div class="resource-card state-card"><h4>Manipur</h4><p>Email: <a href="mailto:sp-cybercrime.mn@manipur.gov.in">sp-cybercrime.mn@manipur.gov.in</a></p><p class="contact-info">Helpline: 1930</p></div>
+                        <div class="resource-card state-card"><h4>Meghalaya</h4><p>Email: <a href="mailto:sspcid-meg@gov.in">sspcid-meg@gov.in</a></p><p class="contact-info">Helpline: 1930</p></div>
+                        <div class="resource-card state-card"><h4>Mizoram</h4><p>Email: <a href="mailto:digcid-mz@mizoram.gov.in">digcid-mz@mizoram.gov.in</a></p><p class="contact-info">Helpline: 1930</p></div>
+                        <div class="resource-card state-card"><h4>Nagaland</h4><p>Email: <a href="mailto:cybercrimeps-ngl@gov.in">cybercrimeps-ngl@gov.in</a></p><p class="contact-info">Helpline: 1930</p></div>
+                        <div class="resource-card state-card"><h4>Odisha</h4><p>Website: <a href="https://cawach.odisha.gov.in/crime/cyber-crime/" target="_blank">awach.odisha.gov.in/crime/cyber-crime/</a></p><p class="contact-info">Helpline: 1930</p></div>
+                        <div class="resource-card state-card"><h4>Sikkim</h4><p>Email: <a href="mailto:spcid@sikkimpolice.nic.in">spcid@sikkimpolice.nic.in</a></p><p class="contact-info">Helpline: 1930</p></div>
+                        <div class="resource-card state-card"><h4>Tripura</h4><p>Email: <a href="mailto:spcybercrime@tripurapolice.nic.in">spcybercrime@tripurapolice.nic.in</a></p><p class="contact-info">Helpline: 1930</p></div>
+                        <div class="resource-card state-card"><h4>West Bengal</h4><p>Website: <a href="https://cybercrimewing.wb.gov.in/" target="_blank">cybercrimewing.wb.gov.in</a></p><p class="contact-info">Helpline: 1930</p></div>
+                        <div class="resource-card state-card"><h4>Goa</h4><p>Website: <a href="https://citizen.goapolice.gov.in/web/guest/cyber-crime-police-station" target="_blank">citizen.goapolice.gov.in</a></p><p class="contact-info">Helpline: 1930</p></div>
+                        <div class="resource-card state-card"><h4>Gujarat</h4><p>Website: <a href="https://gujaratcybercrime.org/eng/#accordion1:~:text=Office%20of%20the,gujarat.gov.in" target="_blank">gujaratcybercrime.org</a></p><p class="contact-info">Helpline: 1930</p></div>
+                        <div class="resource-card state-card"><h4>Madhya Pradesh</h4><p>Email: <a href="mailto:mpcyberpolice@mppolice.gov.in">mpcyberpolice@mppolice.gov.in</a></p><p class="contact-info">Helpline: 1930</p></div>
+                        <div class="resource-card state-card"><h4>Maharashtra</h4><p>Email: <a href="mailto:ig.cbr-mah@gov.in">ig.cbr-mah@gov.in</a></p><p class="contact-info">Helpline: 1930</p></div>
+                        <div class="resource-card state-card"><h4>Andaman & Nicobar</h4><p>Email: <a href="mailto:spcybercrime@tripurapolice.nic.in">spcid.and@nic.in</a></p><p class="contact-info">Helpline: 1930</p></div>
+                        <div class="resource-card state-card"><h4>Chandigarh</h4><p>Website: <a href="https://citizenportal.chandigarhpolice.gov.in/CyberCrimeNo.aspx" target="_blank">citizenportal.chandigarhpolice.gov.in</a></p><p class="contact-info">Helpline: 1930</p></div>
+                        <div class="resource-card state-card"><h4>Ladakh</h4><p>Website: <a href="https://police.ladakh.gov.in/pages/emergency.html" target="_blank">police.ladakh.gov.in</a></p><p class="contact-info">Helpline: 1930</p></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p><strong>Your Privacy is Our Priority:</strong> We do not use cookies or track our visitors.</p>
+            <p style="font-size: 13px; margin-top: 15px; color: #555; line-height: 1.5;"><strong>Disclaimer:</strong> This website provides general information and tools to help victims of digital abuse. Our team are not lawyers, and the content provided does not constitute formal legal advice. If you are in immediate physical danger or need specific legal counsel, please contact local law enforcement or a qualified attorney.</p>
+            <p style="margin-top: 15px;">&copy; 2025 Takedown Resource Kit. <br><a href="https://forms.gle/YOUR_FORM_LINK_HERE" target="_blank" rel="noopener noreferrer" style="color: var(--primary-color); font-weight: 600; text-decoration: underline;">Suggest an Edit or Provide Anonymous Feedback</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

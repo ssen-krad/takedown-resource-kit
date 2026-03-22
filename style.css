@@ -1,0 +1,368 @@
+/* --- Global Styles & Variables --- */
+:root {
+    --primary-color: #005A9C; /* A calm, strong blue */
+    --secondary-color: #E6F0F7; /* A very light, soft blue */
+    --text-color: #333333;
+    --background-color: #FFFFFF;
+    --heading-font: 'Inter', sans-serif;
+    --body-font: 'Inter', sans-serif;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- Quick Exit Button --- */
+#quick-exit {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #D32F2F; /* Red for urgency */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+#quick-exit:hover {
+    background-color: #B71C1C;
+}
+
+
+/* --- Header & Navigation --- */
+header {
+    background-color: var(--background-color);
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: var(--heading-font);
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--primary-color);
+}
+
+/* --- Hero Section (Homepage) --- */
+.hero {
+    text-align: center;
+    padding: 80px 0;
+    background-color: var(--secondary-color);
+}
+
+.hero h1 {
+    font-family: var(--heading-font);
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.hero .subtitle {
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+}
+
+/* --- Buttons --- */
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.button.primary {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.button.secondary {
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+
+.button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* --- Footer --- */
+footer {
+    background-color: #f8f9fa;
+    color: #6c757d;
+    text-align: center;
+    padding: 30px 0;
+    border-top: 1px solid #ddd;
+    font-size: 14px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* --- Styles for Interior Pages --- */
+.page-header {
+    background-color: var(--secondary-color);
+    padding: 40px 0;
+    text-align: center;
+}
+
+.page-header h2 {
+    font-size: 36px;
+    color: var(--primary-color);
+    margin: 0 0 10px 0;
+}
+
+.page-header p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* --- Accordion Styles --- */
+.accordion-section {
+    padding: 60px 0;
+}
+
+.accordion-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    overflow: hidden; /* Ensures the border-radius is respected */
+}
+
+.accordion-header {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border: none;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+    color: var(--primary-color);
+}
+
+.accordion-header:hover {
+    background-color: #e9ecef;
+}
+
+.accordion-header::after {
+    content: '+';
+    position: absolute;
+    right: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    transition: transform 0.2s ease;
+}
+
+.accordion-item[open] > .accordion-header::after {
+    transform: rotate(45deg);
+}
+
+.accordion-content {
+    padding: 20px;
+    background-color: var(--background-color);
+}
+
+.accordion-content hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 30px 0;
+}
+
+/* --- Template Box & Copy Button --- */
+.template-box {
+    position: relative;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.template-box pre {
+    white-space: pre-wrap; /* Allows text to wrap */
+    word-wrap: break-word;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+}
+
+.copy-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.copy-btn:hover {
+    background-color: #004a80;
+}
+
+/* --- Resource Page Styles --- */
+.resource-section {
+    padding: 60px 0;
+}
+
+.resource-category h3 {
+    font-size: 28px;
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+.resource-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.resource-card {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.resource-card h4 {
+    margin-top: 0;
+    font-size: 20px;
+    color: var(--primary-color);
+}
+
+.resource-card .contact-info {
+    font-weight: bold;
+    font-size: 18px;
+    background-color: var(--secondary-color);
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.section-divider {
+    margin: 60px 0;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+
+/* --- State Search Bar --- */
+#state-search {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    box-sizing: border-box; /* Important for padding and width */
+}
+
+#state-search:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+/* --- Progress Tracker --- */
+.tracker-section {
+    padding: 60px 0;
+}
+
+.tracker-list {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.tracker-list h3 {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 10px;
+    margin-top: 30px;
+}
+
+.tracker-list h3:first-child {
+    margin-top: 0;
+}
+
+.tracker-item {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.tracker-checkbox {
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.tracker-item:hover {
+    opacity: 0.8;
+}
