@@ -366,3 +366,107 @@ footer p {
 .tracker-item:hover {
     opacity: 0.8;
 }
+
+/* --- Responsive Design (Mobile & Tablet) --- */
+@media (max-width: 768px) {
+    /* Header & Navigation */
+    header {
+        padding: 15px 0;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo {
+        margin-top: 35px; /* Leave space for Quick Exit button */
+        margin-bottom: 20px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+        background-color: var(--secondary-color);
+        padding: 8px 12px;
+        border-radius: 4px;
+        display: inline-block;
+        margin-bottom: 5px;
+    }
+
+    /* Hero Section */
+    .hero {
+        padding: 40px 0;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero .subtitle {
+        font-size: 16px;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .button {
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    /* Page Titles */
+    .page-header {
+        padding: 30px 0;
+    }
+
+    .page-header h2 {
+        font-size: 26px;
+    }
+
+    /* Grid Layouts */
+    .resource-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Accordion */
+    .accordion-header {
+        font-size: 16px;
+        padding: 15px;
+        padding-right: 40px;
+    }
+
+    .accordion-header::after {
+        right: 15px;
+        font-size: 20px;
+    }
+
+    .template-box pre {
+        font-size: 13px;
+        padding-top: 35px;
+    }
+
+    /* Tracking */
+    .tracker-list {
+        padding: 20px;
+    }
+
+    .tracker-item {
+        font-size: 16px;
+        align-items: flex-start;
+    }
+
+    .tracker-checkbox {
+        margin-top: 2px;
+    }
+}
