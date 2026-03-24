@@ -25,6 +25,10 @@ Simply navigate the static pages to find the resources you need.
 
 This website provides general information and tools to help victims. Content provided does not constitute formal legal advice. If you are in immediate physical danger or need specific legal counsel, please contact local law enforcement or a qualified attorney.
 
-## Contributing
+## ⚖️ License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🤝 Contributing
 
 We welcome contributions to keep the templates and links up to date. Please feel free to open a Pull Request or provide anonymous feedback via the link in the site footer.
