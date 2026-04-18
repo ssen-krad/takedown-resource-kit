@@ -1,16 +1,15 @@
-﻿<!DOCTYPE html>
-<html lang="en">
-
+<!DOCTYPE html>
+<html lang="hi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="Takedown Resource Kit - Take Back Control">
+    <meta property="og:title" content="Takedown Resource Kit - नियंत्रण वापस लें">
     <meta property="og:description"
-        content="A step-by-step guide to reporting and removing non-consensual images from the internet. Free, anonymous, and secure.">
+        content="इंटरनेट से बिना सहमति वाली छवियों की रिपोर्ट करने और उन्हें हटाने के लिए एक चरण-दर-चरण मार्गदर्शिका।">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="favicon.png">
+    <meta property="og:image" content="../favicon.png">
     <link rel="icon" type="image/png" href="../favicon.png">
-    <title>Progress Tracker - Takedown Resource Kit</title>
+    <title>प्रगति ट्रैकर (Progress Tracker) - Takedown Resource Kit</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,20 +18,20 @@
 
 <body>
 
-    <button id="quick-exit" onclick="quickExit()">Quick Exit â†’</button>
+    <button id="quick-exit" onclick="quickExit()">तुरंत बाहर निकलें →</button>
 
     <header>
         <div class="container">
             <nav style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;">
                 <a href="index.html" class="logo">TRK</a>
                 <ul style="flex: 1; display: flex; justify-content: center; gap: 15px;">
-                    <li><a href="takedown.html">Takedown Guides</a></li>
-                    <li><a href="india.html">India Resources</a></li>
-                    <li><a href="international.html">International Help</a></li>
-                    <li><a href="mental-health.html">Mental Health</a></li>
-                    <li><a href="legal-rights.html">Legal Rights</a></li>
-                    <li><a href="digital-security.html">Digital Security</a></li>
-                    <li><a href="tracker.html">Progress Tracker</a></li>
+                    <li><a href="takedown.html">हटाने के गाइड</a></li>
+                    <li><a href="india.html">भारत के संसाधन</a></li>
+                    <li><a href="international.html">अंतर्राष्ट्रीय सहायता</a></li>
+                    <li><a href="mental-health.html">मानसिक स्वास्थ्य</a></li>
+                    <li><a href="legal-rights.html">कानूनी अधिकार</a></li>
+                    <li><a href="digital-security.html">डिजिटल सुरक्षा</a></li>
+                    <li><a href="tracker.html">प्रगति ट्रैकर</a></li>
                 </ul>
                 <div class="lang-toggle" style="font-weight: 600;">
                     <a href="../tracker.html">EN</a> | <a href="tracker.html" class="active" style="color:var(--primary-color);">HI</a>
@@ -44,67 +43,66 @@
     <main>
         <section class="page-header">
             <div class="container">
-                <h2>Your Progress Tracker</h2>
-                <p>Use this interactive checklist to keep track of the actions you have taken. This data is saved
-                    locally on your device and is kept strictly private.</p>
+                <h2>आपकी प्रगति (Your Progress)</h2>
+                <p>आपके द्वारा किए गए कार्यों को ट्रैक करने के लिए इस चेकलिस्ट का उपयोग करें। यह डेटा आपके डिवाइस पर सहेजा जाता है और पूरी तरह से निजी है।</p>
             </div>
         </section>
 
         <section class="tracker-section">
             <div class="container">
                 <div class="tracker-list">
-                    <h3>1. Initial Steps & Evidence</h3>
+                    <h3>1. प्रारंभिक कदम और साक्ष्य (Initial Steps & Evidence)</h3>
                     <label class="tracker-item">
                         <input type="checkbox" id="task-evidence" class="tracker-checkbox">
-                        Saved screenshots and copy of all URLs
+                        सभी प्रासंगिक URL कॉपी किए और स्क्रीनशॉट सेव किए
                     </label>
                     <label class="tracker-item">
                         <input type="checkbox" id="task-security" class="tracker-checkbox">
-                        Changed passwords and enabled 2FA on main accounts
+                        मुख्य अकाउंट्स के पासवर्ड बदले और 2FA चालू किया
                     </label>
 
-                    <h3>2. Proactive Actions</h3>
+                    <h3>2. सक्रिय कार्रवाई (Proactive Actions)</h3>
                     <label class="tracker-item">
                         <input type="checkbox" id="task-stopncii" class="tracker-checkbox">
-                        Created a case on StopNCII.org
+                        StopNCII.org पर केस जनरेट किया (या टेकडाउन किया)
                     </label>
 
-                    <h3>3. Reporting to Platforms</h3>
+                    <h3>3. प्लेटफ़ॉर्म पर रिपोर्ट करना (Reporting to Platforms)</h3>
                     <label class="tracker-item">
                         <input type="checkbox" id="task-meta" class="tracker-checkbox">
-                        Reported to Facebook / Instagram (Meta)
+                        Facebook / Instagram (Meta) को रिपोर्ट किया
                     </label>
                     <label class="tracker-item">
                         <input type="checkbox" id="task-x" class="tracker-checkbox">
-                        Reported to X (formerly Twitter)
+                        X (पूर्व Twitter) को रिपोर्ट किया
                     </label>
                     <label class="tracker-item">
                         <input type="checkbox" id="task-tiktok" class="tracker-checkbox">
-                        Reported to TikTok
+                        TikTok को रिपोर्ट किया
                     </label>
                     <label class="tracker-item">
                         <input type="checkbox" id="task-reddit" class="tracker-checkbox">
-                        Reported to Reddit
+                        Reddit को रिपोर्ट किया
                     </label>
 
-                    <h3>4. Search Engines</h3>
+                    <h3>4. खोज इंजन (Search Engines)</h3>
                     <label class="tracker-item">
                         <input type="checkbox" id="task-google" class="tracker-checkbox">
-                        Requested removal from Google Search
+                        Google Search से हटाने का अनुरोध किया
                     </label>
                     <label class="tracker-item">
                         <input type="checkbox" id="task-bing" class="tracker-checkbox">
-                        Requested removal from Bing
+                        Bing Search से हटाने का अनुरोध किया
                     </label>
 
-                    <h3>5. Legal Action (India Option)</h3>
+                    <h3>5. कानूनी कार्रवाई (Legal Action - India)</h3>
                     <label class="tracker-item">
                         <input type="checkbox" id="task-cybercrime" class="tracker-checkbox">
-                        Filed a complaint on the National Cyber Crime Portal
+                        राष्ट्रीय साइबर अपराध पोर्टल (Cyber Crime Portal) पर शिकायत दर्ज कराई
                     </label>
                     <label class="tracker-item">
                         <input type="checkbox" id="task-grievance" class="tracker-checkbox">
-                        Sent a notice to the platform's Grievance Officer
+                        प्लेटफ़ॉर्म के शिकायत अधिकारी (Grievance Officer) को नोटिस भेजा
                     </label>
                 </div>
             </div>
@@ -113,25 +111,19 @@
 
     <footer>
         <div class="container">
-            <p><strong>Your Privacy is Our Priority:</strong> We do not use cookies or track our visitors.</p>
-            <p style="font-size: 13px; margin-top: 15px; color: #555; line-height: 1.5;"><strong>Disclaimer:</strong>
-                This website provides general information and tools to help victims of digital abuse. Our team are not
-                lawyers, and the content provided does not constitute formal legal advice. If you are in immediate
-                physical danger or need specific legal counsel, please contact local law enforcement or a qualified
-                attorney.</p>
+            <p><strong>आपकी गोपनीयता हमारी प्राथमिकता है:</strong> हम कुकीज़ का उपयोग नहीं करते हैं या अपने आगंतुकों को ट्रैक नहीं करते हैं।</p>
+            <p style="font-size: 13px; margin-top: 15px; color: #555; line-height: 1.5;"><strong>अस्वीकरण (Disclaimer):</strong>
+                यह वेबसाइट डिजिटल दुर्व्यवहार के पीड़ितों की मदद के लिए सामान्य जानकारी और उपकरण प्रदान करती है। हमारी टीम वकील नहीं है, और प्रदान की गई सामग्री औपचारिक कानूनी सलाह नहीं है। यदि आप तत्काल शारीरिक खतरे में हैं या विशिष्ट कानूनी सलाह की आवश्यकता है, तो कृपया स्थानीय पुलिस या योग्य वकील से संपर्क करें।</p>
             <p style="margin-top: 15px;">&copy; 2026 Takedown Resource Kit. <br>
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSc6wH-Wfd-txR3XJY8VXVDm8rFAP8xRy5USfSxthnHKeaaFsQ/viewform?usp=header"
                     target="_blank" rel="noopener noreferrer"
-                    style="color: var(--primary-color); font-weight: 600; text-decoration: underline;">Suggest an Edit
-                    or Feedback</a> |
+                    style="color: var(--primary-color); font-weight: 600; text-decoration: underline;">कोई संपादन या प्रतिक्रिया सुझाएं</a> |
                 <a href="https://github.com/ssen-krad/takedown-resource-kit" target="_blank" rel="noopener noreferrer"
-                    style="color: var(--primary-color); font-weight: 600; text-decoration: underline;">View Code &
-                    Contribute on GitHub</a>
+                    style="color: var(--primary-color); font-weight: 600; text-decoration: underline;">GitHub पर कोड देखें और योगदान करें</a>
             </p>
         </div>
     </footer>
 
     <script src="../script.js"></script>
 </body>
-
 </html>
